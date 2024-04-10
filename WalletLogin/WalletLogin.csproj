@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.17" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.19.0" />
+    <PackageReference Include="Selenium.Support" Version="4.19.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="123.0.6312.8600" />
+    <PackageReference Include="Selenium.WebDriver.IEDriver" Version="4.14.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Tool\" />
+    <None Remove="dict\dict.txt" />
+    <None Remove="files\000120.log" />
+    <None Remove="Logs\.DS_Store" />
+    <None Remove="appsettings.json" />
+    <None Remove="log4net.config" />
+    <None Remove="Enum\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enum\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Tool\ReadDict.cs" />
+    <Compile Remove="Tool\BreakTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="appsettings.json" />
+    <Resource Include="log4net.config" />
+  </ItemGroup>
+</Project>

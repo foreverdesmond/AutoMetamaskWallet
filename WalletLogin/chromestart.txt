@@ -1,0 +1,5 @@
+Mac：
+open -a "Google Chrome" --args --remote-debugging-port=9222
+
+Windows：
+chrome.exe --args --remote-debugging-port=9222

@@ -1,0 +1,81 @@
+1.Ethereum
+2.Linea
+3.zkSync
+4.Arb
+5.Op
+
+6.Bsc
+BNB Smart Chain
+https://rpc.ankr.com/bsc
+56
+BNB
+https://bscscan.com
+
+7.Polygon
+8.Avax
+
+9.opBNB
+opBNB
+https://opbnb-mainnet-rpc.bnbchain.org
+204
+BNB
+https://mainnet.opbnbscan.com
+
+10.Base
+
+11.PolygonzkEVM
+Polygon zkEVM
+https://rpc.ankr.com/polygon_zkevm
+1101
+ETH
+https://zkevm.polygonscan.com
+
+12.zkFair
+ZKFair
+https://rpc.zkfair.io/
+42766
+USDC
+https://scan.zkfair.io/
+
+13.ArbNova
+Arbitrum Nova
+https://nova.arbitrum.io/rpc
+42170
+ETH
+https://nova-explorer.arbitrum.io
+
+14.Core
+Core Blockchain
+https://rpc.coredao.org
+1116
+CORE
+https://scan.coredao.org
+
+15.Celo
+
+16.Mantle
+Mantle
+https://mantle.publicnode.com
+5000
+MNT
+https://explorer.mantle.xyz
+
+17.Manta
+Manta Pacific
+https://pacific-rpc.manta.network/http
+169
+ETH
+https://pacific-explorer.manta.network
+
+18.Holesky
+Holesky Testnet
+https://ethereum-holesky.publicnode.com
+17000
+ETH
+https://holesky.beaconcha.in
+
+19.Taiko
+Taiko Katla L2
+https://rpc.katla.taiko.xyz
+167008
+ETH
