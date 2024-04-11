@@ -3,15 +3,15 @@ using OpenQA.Selenium.Chrome;
 
 namespace WalletLogin
 {
-	public class ChromeWindow
-	{
-		private static ChromeDriver driver;
+    public class ChromeWindow
+    {
+        private static ChromeDriver driver;
 
-		public static ChromeDriver GetChromeDriver()
-		{
-			if(driver == null)
-			{
-				ChromeOptions options = new ChromeOptions();
+        public static ChromeDriver GetChromeDriver()
+        {
+            if (driver == null)
+            {
+                ChromeOptions options = new ChromeOptions();
 
                 // 设置自定义的用户指纹
                 //string customUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36";
@@ -25,8 +25,8 @@ namespace WalletLogin
                 driver = new ChromeDriver(options);
 
             }
-			return driver;
-		}
-	}
+            return driver;
+        }
+    }
 }
 

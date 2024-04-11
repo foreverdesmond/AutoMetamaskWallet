@@ -6,13 +6,13 @@ using System.Collections.Generic;
 
 namespace WalletLogin
 {
-	public class ChromeHelper
-	{
+    public class ChromeHelper
+    {
         private static readonly ILog log = LogManager.GetLogger(typeof(ChromeHelper));
         private ConfigHelper configHelper = new ConfigHelper();
 
         public void NavigateURL(ChromeDriver driver)
-		{
+        {
             // 定义要打开的页面URL
             string targetUrl = configHelper.ReadConfig("WalletAdress");
 
@@ -59,7 +59,7 @@ namespace WalletLogin
                     // 判断当前页面是否是空页面
                     if (currentUrl == newPageUrl)
                     {
-                        log.Info("没有找到钱包页面，将在"+newPageUrl+"新打开页面：" + targetUrl);
+                        log.Info("没有找到钱包页面，将在" + newPageUrl + "新打开页面：" + targetUrl);
                         driver.Navigate().GoToUrl(targetUrl);
                     }
                 }

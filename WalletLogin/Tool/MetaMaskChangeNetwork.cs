@@ -7,8 +7,8 @@ using System.Threading;
 
 namespace WalletLogin
 {
-	public class MetaMaskChangeNetwork
-	{
+    public class MetaMaskChangeNetwork
+    {
         private static readonly ILog log = LogManager.GetLogger(typeof(MetaMaskChangeNetwork));
         private ConfigHelper configHelper = new ConfigHelper();
         private static SeleniumHelper seleniumHelper = new SeleniumHelper();

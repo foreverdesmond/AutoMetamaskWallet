@@ -5,11 +5,11 @@ using OpenQA.Selenium.Chrome;
 
 namespace WalletLogin
 {
-	public class SeleniumHelper
+    public class SeleniumHelper
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
 
-        public bool ElementExistById(ChromeDriver driver,string locator)
+        public bool ElementExistById(ChromeDriver driver, string locator)
         {
             try
             {

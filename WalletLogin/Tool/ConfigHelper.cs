@@ -5,20 +5,20 @@ using OpenQA.Selenium.DevTools;
 
 namespace WalletLogin
 {
-	public class ConfigHelper
+    public class ConfigHelper
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(ConfigHelper));
 
         //ReadConfigFiles
         public string ReadConfig(string ConfigText)
-		{
+        {
             try
             {
                 //Create configuration builder
                 IConfigurationBuilder builder = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("C:\\Projects\\WalletLogin\\WalletLogin\\appsettings.json");
-                    //.AddJsonFile("/Users/richy/Projects/WalletLogin/WalletLogin/appsettings.json");
+                //.AddJsonFile("/Users/richy/Projects/WalletLogin/WalletLogin/appsettings.json");
 
                 // Build configuration
                 IConfiguration configuration = builder.Build();
@@ -33,6 +33,6 @@ namespace WalletLogin
                 return string.Empty;
             }
         }
-	}
+    }
 }
 
