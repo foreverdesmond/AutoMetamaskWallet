@@ -29,7 +29,7 @@ namespace WalletLogin
             //点击活动按钮
             if (seleniumHelper.ElementExistByXPath(driver, "//*[@id=\"app-content\"]/div/div[3]/div/div/div/div[2]/div/ul/li[3]"))
             {
-                log.Info("准备活动按钮!");
+                log.Info("准备点击活动按钮!");
                 driver.FindElement(By.XPath("//*[@id=\"app-content\"]/div/div[3]/div/div/div/div[2]/div/ul/li[3]")).Click();
                 log.Info("点击活动按钮成功!");
             }

@@ -2,6 +2,7 @@
 using log4net;
 using WalletLogin;
 using Microsoft.Extensions.Configuration;
+using WalletLogin.Tool;
 
 public class Program
 {
@@ -34,9 +35,13 @@ public class Program
             //var metamaskChangeNetwork = new MetaMaskChangeNetwork();
             //metamaskChangeNetwork.ChangeNetwork();
 
+            //签名
+            var metamaskSign = new MetaMaskSign();
+            metamaskSign.Sign();
+
             //支付
-            var metamaskPay = new MetaMaskPay();
-            metamaskPay.Pay();
+            //var metamaskPay = new MetaMaskPay();
+            //metamaskPay.Pay();
         }
         catch (Exception ex)
         {
