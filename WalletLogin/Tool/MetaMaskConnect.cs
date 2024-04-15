@@ -23,6 +23,8 @@ namespace WalletLogin
 
             chromeHelper.NavigateURL(driver);
 
+            driver.Navigate().Refresh();
+
             Thread.Sleep(5000);
 
             //点击下一步按钮

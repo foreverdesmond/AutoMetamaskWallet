@@ -24,20 +24,20 @@ public class Program
         try
         {
             //登录
-            var metamaskLogin = new MetaMaskLogin();
-            metamaskLogin.Login();
+            //var metamaskLogin = new MetaMaskLogin();
+            //metamaskLogin.Login();
 
             //链接钱包
             var metamaskConnect = new MetaMaskConnect();
             metamaskConnect.Connect();
+                      
+            //签名
+            var metamaskSign = new MetaMaskSign();
+            metamaskSign.SignAndLogin();
 
             //切换网络
-            var metamaskChangeNetwork = new MetaMaskChangeNetwork();
+            //var metamaskChangeNetwork = new MetaMaskChangeNetwork();
             //metamaskChangeNetwork.ChangeNetwork();
-
-            //签名
-            //var metamaskSign = new MetaMaskSign();
-            //metamaskSign.Sign();
 
             //支付
             //var metamaskPay = new MetaMaskPay();
