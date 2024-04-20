@@ -24,16 +24,16 @@ public class Program
         try
         {
             //登录
-            //var metamaskLogin = new MetaMaskLogin();
-            //metamaskLogin.Login();
+            var metamaskLogin = new MetaMaskLogin();
+            metamaskLogin.Login();
 
             //链接钱包
-            var metamaskConnect = new MetaMaskConnect();
-            metamaskConnect.Connect();
-                      
+            //var metamaskConnect = new MetaMaskConnect();
+            //metamaskConnect.Connect();
+
             //签名
-            var metamaskSign = new MetaMaskSign();
-            metamaskSign.SignAndLogin();
+            //var metamaskSign = new MetaMaskSign();
+            //metamaskSign.SignAndLogin();
 
             //切换网络
             //var metamaskChangeNetwork = new MetaMaskChangeNetwork();
@@ -42,6 +42,10 @@ public class Program
             //支付
             //var metamaskPay = new MetaMaskPay();
             //metamaskPay.Pay();
+
+            //复制钱包地址
+            //var metamaskCopyWalletAdress = new MetaMaskCopyWalletAdress();
+            //metamaskCopyWalletAdress.CopyWalletAdress();
         }
         catch (Exception ex)
         {
