@@ -12,7 +12,7 @@ namespace WalletLogin
 {
     public class OkxSign
     {
-        private static readonly ILog log = LogManager.GetLogger(typeof(MetaMaskSign));
+        private static readonly ILog log = LogManager.GetLogger(typeof(OkxSign));
         private ConfigHelper configHelper = new ConfigHelper();
 
         public void Sign()
@@ -25,7 +25,7 @@ namespace WalletLogin
 
             chromeHelper.NavigateURL(driver, walletType);
 
-            Thread.Sleep(2000);
+            Thread.Sleep(5000);
 
             var seleniumHelper = new SeleniumHelper();
 

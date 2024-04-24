@@ -11,7 +11,7 @@ namespace WalletLogin
 {
     public class OkxLogin
     {
-        private static readonly ILog log = LogManager.GetLogger(typeof(MetaMaskLogin));
+        private static readonly ILog log = LogManager.GetLogger(typeof(OkxLogin));
         private ConfigHelper configHelper = new ConfigHelper();
 
         public void Login()

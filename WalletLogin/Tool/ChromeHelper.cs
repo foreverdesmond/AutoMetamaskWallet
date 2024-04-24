@@ -58,24 +58,30 @@ namespace WalletLogin
             }
             else
             {
-                string newPageUrl = "chrome://new-tab-page/";
-                // 遍历所有窗口句柄，查找空白新页面
-                foreach (string handle in windowHandles)
+                if (walletType == "Metamask")
                 {
-                    // 切换到当前窗口
-                    driver.SwitchTo().Window(handle);
-
-                    // 获取当前窗口中的页面URL
-                    string currentUrl = driver.Url;
-
-                    // 判断当前页面是否是空页面
-                    if (currentUrl == newPageUrl)
+                    string newPageUrl = "chrome://new-tab-page/";
+                    // 遍历所有窗口句柄，查找空白新页面
+                    foreach (string handle in windowHandles)
                     {
-                        log.Info("没有找到钱包页面，将在" + newPageUrl + "新打开页面：" + targetUrl);
-                        driver.Navigate().GoToUrl(targetUrl);
+                        // 切换到当前窗口
+                        driver.SwitchTo().Window(handle);
+
+                        // 获取当前窗口中的页面URL
+                        string currentUrl = driver.Url;
+
+                        // 判断当前页面是否是空页面
+                        if (currentUrl == newPageUrl)
+                        {
+                            log.Info("没有找到钱包页面，将在" + newPageUrl + "新打开页面：" + targetUrl);
+                            driver.Navigate().GoToUrl(targetUrl);
+                        }
                     }
                 }
-
+                else
+                {
+                    log.Info("没有找到钱包页面");
+                }
             }
         }
 
