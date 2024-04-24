@@ -20,7 +20,9 @@ namespace WalletLogin
 
             ChromeHelper chromeHelper = new ChromeHelper();
 
-            chromeHelper.NavigateURL(driver);
+            string walletType = "Metamask";
+
+            chromeHelper.NavigateURL(driver, walletType);
 
             log.Info("成功打开MetaMask钱包.");
 

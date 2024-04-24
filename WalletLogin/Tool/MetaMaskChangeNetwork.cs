@@ -24,7 +24,9 @@ namespace WalletLogin
 
             ChromeHelper chromeHelper = new ChromeHelper();
 
-            chromeHelper.NavigateURL(driver);
+            string walletType = "Metamask";
+
+            chromeHelper.NavigateURL(driver, walletType);
 
             Thread.Sleep(3000);
 

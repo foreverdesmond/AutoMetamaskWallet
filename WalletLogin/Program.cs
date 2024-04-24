@@ -23,9 +23,9 @@ public class Program
 
         try
         {
-            //登录
-            var metamaskLogin = new MetaMaskLogin();
-            metamaskLogin.Login();
+            //Metamask登录
+            //var metamaskLogin = new MetaMaskLogin();
+            //metamaskLogin.Login();
 
             //链接钱包
             //var metamaskConnect = new MetaMaskConnect();
@@ -46,6 +46,18 @@ public class Program
             //复制钱包地址
             //var metamaskCopyWalletAdress = new MetaMaskCopyWalletAdress();
             //metamaskCopyWalletAdress.CopyWalletAdress();
+
+            //OKX登录
+            var okxLogin = new OkxLogin();
+            okxLogin.Login();
+
+            //OKX链接钱包
+            var okxConncet = new OkxConnect();
+            okxConncet.Connect();
+
+            //OKX签名
+            var okxSign = new OkxSign();
+            okxSign.Sign();
         }
         catch (Exception ex)
         {
