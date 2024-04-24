@@ -24,7 +24,7 @@ namespace WalletLogin
 
             string walletType = "OKX";
 
-            chromeHelper.NavigateURL(driver, walletType,);
+            chromeHelper.NavigateURL(driver, walletType);
 
             log.Info("成功打开OKX钱包.");
 
