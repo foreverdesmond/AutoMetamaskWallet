@@ -3,6 +3,9 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System;
+using System.Diagnostics;
 
 namespace WalletLogin
 {
@@ -134,6 +137,18 @@ namespace WalletLogin
                         driver.Navigate().GoToUrl(targetUrl);
                     }
                 }
+            }
+        }
+
+        public void CloseChromeDriver(ChromeDriver driver)
+        {
+            try
+            {
+                driver.Quit();
+            }
+            catch (Exception ex)
+            {
+              log.Error("关闭 ChromeDriver 进程时出现异常：" + ex.Message);
             }
         }
     }

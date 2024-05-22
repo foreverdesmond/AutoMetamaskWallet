@@ -126,6 +126,7 @@ namespace WalletLogin
                 }
             }
 
+            chromeHelper.CloseChromeDriver(driver);
         }
     }
 }

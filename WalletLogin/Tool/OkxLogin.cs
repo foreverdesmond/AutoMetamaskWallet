@@ -56,6 +56,8 @@ namespace WalletLogin
             {
                 log.Error("找不到登录按钮");
             }
+
+            chromeHelper.CloseChromeDriver(driver);
         }
     }
 }

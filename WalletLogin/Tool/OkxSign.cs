@@ -40,6 +40,8 @@ namespace WalletLogin
             {
                 log.Error("找不到确认按钮");
             }
+
+            chromeHelper.CloseChromeDriver(driver);
         }
     }
 }

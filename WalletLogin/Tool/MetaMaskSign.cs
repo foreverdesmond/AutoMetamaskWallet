@@ -40,6 +40,8 @@ namespace WalletLogin.Tool
             {
                 log.Error("找不到签名按钮");
             }
+
+            chromeHelper.CloseChromeDriver(driver);
         }
 
         public void SignAndLogin()
@@ -81,6 +83,8 @@ namespace WalletLogin.Tool
             {
                 log.Error("找不到登录按钮");
             }
+
+            chromeHelper.CloseChromeDriver(driver);
         }
     }
 }

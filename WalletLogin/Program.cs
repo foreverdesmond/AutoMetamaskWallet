@@ -56,12 +56,16 @@ public class Program
             //okxConncet.Connect();
 
             //OKX签名
-            var okxSign = new OkxSign();
-            okxSign.Sign();
+            //var okxSign = new OkxSign();
+            //okxSign.Sign();
 
             //OKX支付
             //var okxPay = new OkxPay();
             //okxPay.Pay();
+
+            //OKX确认
+            var okxConfrim = new OKConfirm();
+            okxConfrim.Confirm();            
         }
         catch (Exception ex)
         {
