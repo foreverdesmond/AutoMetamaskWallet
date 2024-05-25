@@ -48,8 +48,8 @@ public class Program
             //metamaskCopyWalletAdress.CopyWalletAdress();
 
             //OKX登录
-            //var okxLogin = new OkxLogin();
-            //okxLogin.Login();
+            var okxLogin = new OkxLogin();
+            okxLogin.Login();
 
             //OKX链接钱包
             //var okxConncet = new OkxConnect();
@@ -64,8 +64,8 @@ public class Program
             //okxPay.Pay();
 
             //OKX确认
-            var okxConfrim = new OKConfirm();
-            okxConfrim.Confirm();            
+            //var okxConfrim = new OKConfirm();
+            //okxConfrim.Confirm();            
         }
         catch (Exception ex)
         {
